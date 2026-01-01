@@ -84,3 +84,10 @@ func (b *Board) UpdateDescription(newDescRaw string) error {
 	b.updatedAt = time.Now()
 	return nil
 }
+
+func (b *Board) Equals(other *Board) bool {
+	if other == nil {
+		return false
+	}
+	return b.id == other.id
+}

@@ -8,4 +8,5 @@ var (
 	ErrInvalidBoardTitleLong       = errors.New("board title is too long")
 	ErrInvalidBoardDescriptionLong = errors.New("board description is too long")
 	ErrInvalidOwnerID              = errors.New("board ownerID is required")
+	ErrBoardNotFound               = errors.New("board not found")
 )
